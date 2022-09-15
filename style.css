@@ -1,0 +1,173 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+
+    list-style: none;
+}
+
+body {
+
+    background-image: url(fundo.png);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #111114;  
+}
+
+body * {
+
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    line-height: 160%;
+}
+
+header {
+
+    margin-top: 32px;
+    height: 120px;
+}
+
+header div {
+
+    margin: auto;
+    width: 120px;
+    background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 100%;
+    padding: 4px;
+    display: flex;
+    transition: transform .5s;
+    animation: fromTop 1s .3s backwards;
+}
+
+header div:hover {
+
+    transform: scale(1.2);
+}
+
+header div img {
+
+    width: 100%;
+    border-radius: 100%;
+}
+
+main {
+
+    max-width: 580px;
+    width: 90%;
+    display: grid;
+    gap: 32px;
+    margin: 32px auto;
+}
+
+section {
+
+    padding-top: 4px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    animation: fromBottom 1s .3s backwards;
+}
+
+section:nth-child(1) {
+
+    animation-delay: .3s;
+}
+
+section:nth-child(2) {
+    
+    animation-delay: .6s;
+}
+
+section:nth-child(3) {
+    
+    animation-delay: .9s;
+}
+
+section div {
+
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+    background-color: #2A2634;
+}
+
+section h2 {
+
+    letter-spacing: -0.47px;
+}
+
+section p {
+
+    color: #a1a1aa;
+}
+
+section ul {
+
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+section ul li {
+
+    transition: transform .5s;
+}
+
+section ul li:hover {
+
+    transform: scale(1.2);
+}
+
+.game_list img {
+
+    border-radius: 8px;
+    width: 90px;
+    animation: fromBottom 1s .5s backwards;
+}
+
+.channel_list img{
+
+    width: 70px;
+    border-radius: 100%;
+    border: solid 1px #a1a1aa;
+    animation: fromBottom 1s .5s backwards;
+}
+
+.social_list svg {
+
+    animation: fromBottom 1s .5s backwards;
+}
+
+@keyframes fromTop {
+    from {
+
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    
+    to {
+        
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
