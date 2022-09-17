@@ -2,7 +2,7 @@
 
 ![preview](./.github/preview.png)
 
-[Clique aqui para visualizar - Click to see](mulinatti.github.io/nlw-esports-page)
+[Clique aqui para visualizar - Click to see](mulinatti.github.io/nlw-esports-page/)
 
 Esse é um projeto que fiz na NLW E-Sport Week da Rocketseat. Basicamente é sobre uma página pessoal
 sobre os jogos que eu gosto e minhas redes sociais.
